@@ -316,7 +316,7 @@ img {
    ========================================================================== */
 .hero-banner {
   position: relative;
-  background: linear-gradient(135deg, rgba(39, 19, 7, 0.92) 0%, rgba(20, 8, 2, 0.95) 100%), url('../img/7.jpg') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(39, 19, 7, 0.60) 0%, rgba(20, 8, 2, 0.60) 100%), url('../img/7.jpg') center/cover no-repeat;
   min-height: 75vh;
   display: flex;
   align-items: center;
