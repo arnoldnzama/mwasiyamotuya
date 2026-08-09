@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Programmes — ONG MWASI YA MOTUYA</title>
+  <meta name="description" content="Découvrez les programmes et projets terrain de l'ONG MWASI YA MOTUYA en RDC et la carte interactive de nos zones d'intervention.">
+  <link rel="icon" type="image/x-icon" href="ico/logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- STICKY NAVBAR -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA">
+        <div>
+          <div class="brand-title">MWASI YA <span>MOTUYA</span></div>
+          <div style="font-size:0.65rem;color:var(--color-accent);text-transform:uppercase;letter-spacing:0.5px;">Égalité · Inclusion · Autonomisation</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        
+        <!-- MENU DROPDOWN À PROPOS -->
+        <li class="nav-item has-dropdown">
+          <a href="a-propos.html" class="nav-link active">
+            À Propos <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="a-propos.html" class="dropdown-link">Qui sommes-nous</a></li>
+            <li><a href="nos-domaines.html" class="dropdown-link">Nos Domaines</a></li>
+            <li><a href="programmes.html" class="dropdown-link active">Programmes</a></li>
+            <li><a href="notre-impact.html" class="dropdown-link">Notre Impact</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="ressources.html" class="nav-link">Ressources</a></li>
+        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualités</a></li>
+        
+        <!-- MENU DROPDOWN REJOIGNEZ-NOUS -->
+        <li class="nav-item has-dropdown">
+          <a href="agir.html" class="nav-link">
+            Rejoignez-nous <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="agir.html" class="dropdown-link">Agir avec nous</a></li>
+            <li><a href="partenaire.html" class="dropdown-link">Devenir Partenaire</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="container">
+    <h1>Nos Programmes & Projets</h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Programmes</div>
+  </div>
+</div>
+
+<!-- PROGRAMMES TERRAIN -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Galerie de programmes</span>
+      <h2 class="section-title">Nos actions sur le terrain en RDC</h2>
+    </div>
+
+    <div class="filters-bar">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="leadership">Leadership</button>
+      <button class="filter-btn" data-filter="vbg">Lutte VBG</button>
+      <button class="filter-btn" data-filter="handicap">Inclusion Handicap</button>
+      <button class="filter-btn" data-filter="dssr">Santé DSSR</button>
+      <button class="filter-btn" data-filter="autonomisation">Autonomisation</button>
+    </div>
+
+    <div class="grid-3">
+      <div class="prog-card" data-category="leadership">
+        <div class="prog-card-img">
+          <img src="img/deuxième sommet de la femme congolaise.jpg" alt="Sommet de la Femme Congolaise">
+          <span class="prog-tag">Leadership</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Sommet National de la Femme Congolaise</h3>
+          <p>Participation et plaidoyer actif pour la parité et l'égalité d'accès aux instances de prise de décision en RDC.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> 2024 <i class="fa-solid fa-location-dot"></i> Kinshasa</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="vbg">
+        <div class="prog-card-img">
+          <img src="Stop aux violences sexuelles et celles basées sur le genre/1.jpg" alt="Atelier VBG">
+          <span class="prog-tag">VBG</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Atelier de Sensibilisation & Référencement VBG</h3>
+          <p>Formation des relais communautaires pour l'identification rapide et la prise en charge des victimes de VBG.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> 2024–2025 <i class="fa-solid fa-location-dot"></i> Nord-Kivu</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="vbg">
+        <div class="prog-card-img">
+          <img src="Stop aux violences sexuelles et celles basées sur le genre/2.jpg" alt="Formation relais communautaires VBG">
+          <span class="prog-tag">VBG</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Formation des Relais Communautaires</h3>
+          <p>Renforcement des capacités des acteurs de terrain pour la prévention et la réponse aux violences de genre.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> 2023–2024 <i class="fa-solid fa-location-dot"></i> Sud-Kivu</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="handicap">
+        <div class="prog-card-img">
+          <img src="img/3.jpg" alt="Women Disability Empowerment">
+          <span class="prog-tag">Inclusion Handicap</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Women & Disability Empowerment</h3>
+          <p>Remise d'équipements et formation en gestion d'AGR pour les femmes vivant avec handicap.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> 2024 <i class="fa-solid fa-location-dot"></i> Kinshasa</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="dssr">
+        <div class="prog-card-img">
+          <img src="img/6.jpg" alt="Sensibilisation DSSR">
+          <span class="prog-tag">Santé DSSR</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Jeunes Filles & Santé Reproductive</h3>
+          <p>Campagne de sensibilisation dans les établissements scolaires et centres communautaires sur la DSSR.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> 2023–2025 <i class="fa-solid fa-location-dot"></i> Kongo Central</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="prog-card" data-category="autonomisation">
+        <div class="prog-card-img">
+          <img src="img/aide.jpg" alt="Autonomisation économique">
+          <span class="prog-tag">Autonomisation</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Women Economic Empowerment Initiative</h3>
+          <p>Formations professionnelles, accès aux micro-crédits et accompagnement à l'entrepreneuriat féminin.</p>
+          <div style="display:flex;gap:10px;align-items:center;font-size:0.8rem;color:var(--color-secondary);margin-bottom:12px;"><i class="fa-solid fa-calendar"></i> En cours <i class="fa-solid fa-location-dot"></i> Haut-Katanga</div>
+          <a href="#" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTE INTERACTIVE RDC -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Présence Géographique</span>
+      <h2 class="section-title">Nos Zones d'Intervention en RDC</h2>
+      <p>Cliquez sur les provinces pour découvrir nos projets actifs et notre impact local.</p>
+    </div>
+
+    <div class="map-box">
+      <div class="map-wrapper">
+        <div style="width:100%;max-height:480px;display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 800 700" style="width:100%;height:auto;max-height:480px;">
+            <defs>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <rect width="800" height="700" fill="#f0ebe3" rx="10"/>
+            <path class="rdc-province active" data-prov="kinshasa" d="M 180 400 L 250 390 L 275 430 L 230 460 L 190 445 Z"/>
+            <path class="rdc-province" data-prov="kongo_central" d="M 100 430 L 180 400 L 190 445 L 175 490 L 110 480 Z"/>
+            <path class="rdc-province" data-prov="nord_kivu" d="M 600 240 L 680 225 L 710 300 L 645 315 L 605 290 Z"/>
+            <path class="rdc-province" data-prov="sud_kivu" d="M 610 325 L 685 310 L 700 400 L 635 410 L 610 375 Z"/>
+            <path class="rdc-province" data-prov="ituri" d="M 600 150 L 700 140 L 720 220 L 625 230 L 595 200 Z"/>
+            <path class="rdc-province" data-prov="haut_katanga" d="M 510 490 L 650 468 L 680 610 L 545 620 L 510 570 Z"/>
+            <circle cx="225" cy="425" r="8" fill="#d8a22c" filter="url(#glow)"/>
+            <circle cx="148" cy="455" r="7" fill="#d8a22c" filter="url(#glow)"/>
+            <circle cx="650" cy="268" r="7" fill="#d8a22c" filter="url(#glow)"/>
+            <circle cx="657" cy="365" r="7" fill="#d8a22c" filter="url(#glow)"/>
+            <circle cx="650" cy="183" r="7" fill="#d8a22c" filter="url(#glow)"/>
+            <circle cx="583" cy="547" r="7" fill="#d8a22c" filter="url(#glow)"/>
+            <text x="215" y="412" font-size="11" fill="#271307" font-weight="700" font-family="Montserrat">Kinshasa</text>
+            <text x="105" y="420" font-size="10" fill="#271307" font-family="Montserrat">Kongo Ctrl.</text>
+            <text x="610" y="262" font-size="10" fill="#271307" font-family="Montserrat">Nord-Kivu</text>
+            <text x="615" y="368" font-size="10" fill="#271307" font-family="Montserrat">Sud-Kivu</text>
+            <text x="616" y="178" font-size="10" fill="#271307" font-family="Montserrat">Ituri</text>
+            <text x="545" y="550" font-size="10" fill="#271307" font-family="Montserrat">Haut-Katanga</text>
+          </svg>
+        </div>
+
+        <div class="province-panel">
+          <h3><i class="fa-solid fa-map-location-dot" style="color:var(--color-secondary);"></i> <span id="provName">Kinshasa — Siège National</span></h3>
+          <p id="provLead" style="color:var(--color-secondary);font-size:0.85rem;font-weight:700;">Coordination Nationale & Plaidoyer Institutionnel</p>
+          <div class="prov-stat-grid">
+            <div class="prov-stat">
+              <span class="val" id="provProjects">8</span>
+              <span class="lbl">Projets Actifs</span>
+            </div>
+            <div class="prov-stat">
+              <span class="val" id="provBenef">8 450</span>
+              <span class="lbl">Bénéficiaires</span>
+            </div>
+          </div>
+          <h4 style="font-size:0.9rem;margin-bottom:8px;">Programmes déployés :</h4>
+          <p id="provPrograms" style="font-size:0.87rem;">Leadership Féminin, Protection VBG, Autonomisation des femmes vivant avec handicap, Plaidoyer institutionnel.</p>
+          <a href="agir.html" class="btn btn-primary" style="margin-top:15px;width:100%;justify-content:center;">
+            <i class="fa-solid fa-hands-holding-circle"></i> Soutenir cette région
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMES À VENIR -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Perspective 2026–2027</span>
+      <h2 class="section-title">Programmes à venir</h2>
+      <p>De nouveaux programmes en cours de développement pour renforcer notre impact en RDC.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <h3>Femmes Leaders Digitales</h3>
+        <p>Programme de formation aux compétences numériques et au leadership digital pour les jeunes femmes entrepreneures de 18–35 ans.</p>
+        <span class="tag-pill" style="margin-top:10px;">Planifié 2026</span>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Réseau des Survivantes de VBG</h3>
+        <p>Création d'un réseau national de survivantes pour le plaidoyer entre pairs, le soutien mutuel et le témoignage public à Kinshasa et dans les provinces.</p>
+        <span class="tag-pill" style="margin-top:10px;">Planifié 2026–2027</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Soutenez nos programmes sur le terrain</h2>
+    <p>Votre soutien nous permet de maintenir et d'étendre nos actions pour les femmes et les filles vulnérables en RDC.</p>
+    <div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+      <a href="agir.html#don" class="btn btn-gold"><i class="fa-solid fa-heart"></i> Faire un don</a>
+      <a href="partenaire.html" class="btn btn-outline-light"><i class="fa-solid fa-handshake"></i> Devenir partenaire</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA" style="height:60px;margin-bottom:15px;">
+        <p style="font-size:0.88rem;color:#cbbba8;max-width:280px;">Pour une société équitable, inclusive et sans violence envers les femmes et les filles en République Démocratique du Congo.</p>
+        <div class="social-links" style="margin-top:15px;">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div><h4>À Propos</h4><ul class="footer-links"><li><a href="a-propos.html">Qui sommes-nous</a></li><li><a href="nos-domaines.html">Nos Domaines</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="notre-impact.html">Notre Impact</a></li></ul></div>
+      <div><h4>Nos Actions</h4><ul class="footer-links"><li><a href="nos-domaines.html">Égalité de Genre</a></li><li><a href="nos-domaines.html#vbg">Lutte contre les VBG</a></li><li><a href="nos-domaines.html#dssr">Droits DSSR</a></li><li><a href="nos-domaines.html#handicap">Inclusion Handicap</a></li></ul></div>
+      <div><h4>Rejoignez-nous</h4><ul class="footer-links"><li><a href="agir.html">Agir avec nous</a></li><li><a href="partenaire.html">Devenir Partenaire</a></li><li><a href="agir.html#don">Faire un don</a></li><li><a href="agir.html#benevole">Bénévolat</a></li></ul></div>
+      <div><h4>Contact</h4><ul class="footer-links"><li><a href="contact.html"><i class="fa-solid fa-location-dot" style="color:var(--color-secondary);"></i> Kinshasa, RDC</a></li><li><a href="mailto:contact@mwasiyamotuya.org"><i class="fa-solid fa-envelope" style="color:var(--color-secondary);"></i> contact@mwasiyamotuya.org</a></li><li><a href="tel:+243810000000"><i class="fa-solid fa-phone" style="color:var(--color-secondary);"></i> +243 81 000 0000</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <strong>ONG MWASI YA MOTUYA</strong>. Tous droits réservés.</span>
+      <div style="display:flex;gap:20px;"><a href="#" style="color:#cbbba8;font-size:0.82rem;">Politique de confidentialité</a><a href="#" style="color:#cbbba8;font-size:0.82rem;">Protection des données</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

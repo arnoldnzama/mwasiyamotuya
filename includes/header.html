@@ -1,0 +1,61 @@
+<!-- HEADER PARTAGÉ — ONG MWASI YA MOTUYA -->
+<!-- STICKY NAVBAR -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <!-- LOGO (Taille agrandie sur desktop, mobile & tablette) -->
+      <a href="index.html" class="brand-logo">
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA">
+        <div>
+          <div class="brand-title">MWASI YA <span>MOTUYA</span></div>
+          <div style="font-size: 0.65rem; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.5px;">Égalité · Inclusion · Autonomisation</div>
+        </div>
+      </a>
+
+      <!-- NAVIGATION DESKTOP & MOBILE -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        
+        <!-- MENU DROPDOWN À PROPOS -->
+        <li class="nav-item has-dropdown">
+          <a href="a-propos.html" class="nav-link">
+            À Propos <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="a-propos.html" class="dropdown-link">Qui sommes-nous</a></li>
+            <li><a href="nos-domaines.html" class="dropdown-link">Nos Domaines</a></li>
+            <li><a href="programmes.html" class="dropdown-link">Programmes</a></li>
+            <li><a href="notre-impact.html" class="dropdown-link">Notre Impact</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="ressources.html" class="nav-link">Ressources</a></li>
+        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualités</a></li>
+        
+        <!-- MENU DROPDOWN REJOIGNEZ-NOUS -->
+        <li class="nav-item has-dropdown">
+          <a href="agir.html" class="nav-link">
+            Rejoignez-nous <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="agir.html" class="dropdown-link">Agir avec nous</a></li>
+            <li><a href="partenaire.html" class="dropdown-link">Devenir Partenaire</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- LANG SWITCHER + MOBILE TOGGLE -->
+      <div style="display:flex; gap:12px; align-items:center;">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

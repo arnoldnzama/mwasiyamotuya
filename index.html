@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG MWASI YA MOTUYA — Droits, Égalité & Autonomisation des Femmes en RDC</title>
+  <meta name="description" content="ONG MWASI YA MOTUYA — Promotion de la femme, égalité de genre, lutte contre les VBG, droits sexuels et reproductifs et autonomisation des femmes et filles vivant avec handicap en RDC.">
+  <link rel="icon" type="image/x-icon" href="ico/logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- STICKY NAVBAR -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA">
+        <div>
+          <div class="brand-title">MWASI YA <span>MOTUYA</span></div>
+          <div style="font-size:0.65rem;color:var(--color-accent);text-transform:uppercase;letter-spacing:0.5px;">Égalité · Inclusion · Autonomisation</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
+        
+        <!-- MENU DROPDOWN À PROPOS -->
+        <li class="nav-item has-dropdown">
+          <a href="a-propos.html" class="nav-link">
+            À Propos <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="a-propos.html" class="dropdown-link">Qui sommes-nous</a></li>
+            <li><a href="nos-domaines.html" class="dropdown-link">Nos Domaines</a></li>
+            <li><a href="programmes.html" class="dropdown-link">Programmes</a></li>
+            <li><a href="notre-impact.html" class="dropdown-link">Notre Impact</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="ressources.html" class="nav-link">Ressources</a></li>
+        <li class="nav-item"><a href="actualites.html" class="nav-link">Actualités</a></li>
+        
+        <!-- MENU DROPDOWN REJOIGNEZ-NOUS -->
+        <li class="nav-item has-dropdown">
+          <a href="agir.html" class="nav-link">
+            Rejoignez-nous <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="agir.html" class="dropdown-link">Agir avec nous</a></li>
+            <li><a href="partenaire.html" class="dropdown-link">Devenir Partenaire</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero-banner">
+  <div class="container">
+    <div class="hero-content">
+      <span class="hero-tag"><i class="fa-solid fa-award"></i> Organisation Non Gouvernementale · RDC</span>
+      <h1 class="hero-title" id="heroTitle">Ensemble pour les droits, l'égalité et l'autonomisation des femmes et des filles</h1>
+
+      <div class="hero-quote-card">
+        <p id="heroQuote">« NOUS ENVISAGEONS UNE SOCIÉTÉ PLUS ÉQUITABLE ET INCLUSIVE OÙ LES FEMMES ET LES JEUNES FILLES BÉNÉFICIENT DE MÊMES OPPORTUNITÉS QUE LES HOMMES ET JOUISSENT PLEINEMENT DE LEURS DROITS SANS DISCRIMINATION AUCUNE. »</p>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="a-propos.html" class="btn btn-gold" id="btnMission"><i class="fa-solid fa-compass"></i> Découvrir notre mission</a>
+        <a href="agir.html" class="btn btn-outline-light" id="btnDon"><i class="fa-solid fa-hand-holding-heart"></i> Soutenir notre action</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE STRIP -->
+<section class="feature-strip">
+  <div class="container">
+    <div class="feature-strip-grid">
+      <div class="feature-item">
+        <div class="icon-wrap"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div>
+          <h4>Égalité de Genre</h4>
+          <p>Promotion des droits égaux et lutte contre les discriminations</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="icon-wrap"><i class="fa-solid fa-shield-halved"></i></div>
+        <div>
+          <h4>Lutte contre les VBG</h4>
+          <p>Prévention, prise en charge et accompagnement des survivantes</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="icon-wrap"><i class="fa-solid fa-universal-access"></i></div>
+        <div>
+          <h4>Inclusion du Handicap</h4>
+          <p>Autonomisation des femmes et filles vivant avec handicap</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="icon-wrap"><i class="fa-solid fa-heart-pulse"></i></div>
+        <div>
+          <h4>Droits DSSR</h4>
+          <p>Santé sexuelle, reproductive et accès équitable aux soins</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS — RÉSUMÉ MISSION -->
+<section class="section-padding">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="img/Fondateur et Coordinateur exécutif.jpg" alt="Fondateur et Coordinateur Exécutif ONG MWASI YA MOTUYA" style="height:480px;">
+        <div class="about-badge">
+          <span class="num">10+</span>
+          <span style="font-size:0.85rem;">Années d'engagement<br>sur le terrain en RDC</span>
+        </div>
+      </div>
+      <div>
+        <span class="section-subtitle">Qui sommes-nous</span>
+        <h2 class="section-title" style="text-align:left;">L'ONG qui place les femmes et les filles au cœur du développement</h2>
+        <p>L'<strong>ONG MWASI YA MOTUYA</strong> («&nbsp;Femme de Valeur&nbsp;») est active dans la promotion de la femme, l'égalité de genre et la lutte contre les violences basées sur le genre (VBG), les droits sexuels et reproductifs de la jeune fille, ainsi que l'autonomisation des femmes et jeunes filles vivant avec handicap, en renforçant leurs capacités.</p>
+        <p>Nous intervenons directement en RDC par des programmes intégrés alliant protection, sensibilisation, formation et plaidoyer auprès des communautés les plus vulnérables.</p>
+        <ul class="about-check-list">
+          <li><i class="fa-solid fa-check"></i> Égalité & Justice Sociale</li>
+          <li><i class="fa-solid fa-check"></i> Inclusion Sans Discrimination</li>
+          <li><i class="fa-solid fa-check"></i> Protection des Survivantes VBG</li>
+          <li><i class="fa-solid fa-check"></i> Leadership Féminin</li>
+        </ul>
+        <a href="a-propos.html" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOMAINES D'INTERVENTION -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Axes stratégiques</span>
+      <h2 class="section-title">Nos Domaines d'Intervention</h2>
+      <p>Des programmes intégrés pour répondre aux défis multidimensionnels auxquels font face les femmes et les filles en RDC.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <h3>Égalité de Genre</h3>
+        <p>Promotion de l'égalité hommes-femmes, déconstruction des stéréotypes et lutte contre les discriminations.</p>
+        <a href="nos-domaines.html" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+        <h3>Lutte contre les VBG</h3>
+        <p>Prévention, protection, référencement, soutien psychosocial et accompagnement juridique des survivantes.</p>
+        <a href="nos-domaines.html#vbg" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Santé et Droits DSSR</h3>
+        <p>Information, éducation complète, planification familiale et accès équitable à la santé reproductive.</p>
+        <a href="nos-domaines.html#dssr" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-universal-access"></i></div>
+        <h3>Handicap & Inclusion</h3>
+        <p>Défense des droits et inclusion totale des femmes et filles vivant avec un handicap physique ou sensoriel.</p>
+        <a href="nos-domaines.html#handicap" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
+        <h3>Autonomisation Économique</h3>
+        <p>Formation professionnelle, entrepreneuriat, micro-crédits et éducation financière pour l'indépendance des femmes.</p>
+        <a href="nos-domaines.html#autonomisation" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="card-item">
+        <div class="card-icon"><i class="fa-solid fa-users-gear"></i></div>
+        <h3>Leadership Féminin</h3>
+        <p>Renforcement des capacités, participation citoyenne et implication des femmes dans la prise de décision.</p>
+        <a href="nos-domaines.html#leadership" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION VBG -->
+<section class="section-padding vbg-section">
+  <div class="container">
+    <div class="vbg-grid">
+      <div class="vbg-card">
+        <span class="vbg-badge"><i class="fa-solid fa-triangle-exclamation"></i> Priorité Absolue</span>
+        <h2>« Aucune femme ni aucune fille ne devrait vivre dans la peur ou subir des violences. »</h2>
+        <p style="color:#ddd;">Nous déployons un dispositif intégré de prévention, de protection et de référencement pour les victimes et survivantes de violences basées sur le genre en RDC.</p>
+        <div class="vbg-service-list">
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Prise en charge médicale</div>
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Assistance juridique</div>
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Soutien psychosocial</div>
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Hébergement d'urgence</div>
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Accès à la justice</div>
+          <div class="vbg-service-item"><i class="fa-solid fa-check-circle"></i> Référencement sécurisé</div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="nos-domaines.html#vbg" class="btn btn-gold"><i class="fa-solid fa-file-shield"></i> Notre approche VBG</a>
+          <a href="contact.html" class="btn btn-outline-light">Nous contacter</a>
+        </div>
+      </div>
+      <img src="Stop aux violences sexuelles et celles basées sur le genre/Stop aux violences sexuelles et celles basées sur le genre.jpg" alt="Stop aux VBG" class="vbg-img">
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT COUNTERS BAND -->
+<section class="impact-band">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:40px;">
+      <span class="section-subtitle" style="background:rgba(216,162,44,0.2);color:var(--color-accent);border-color:var(--color-secondary);">Résultats Vérifiés</span>
+      <h2 style="color:#ffffff;">Notre Impact en Chiffres Clés</h2>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-person-dress"></i></div>
+        <div class="counter" data-target="25000">25 000+</div>
+        <div class="label">Femmes accompagnées</div>
+      </div>
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-children"></i></div>
+        <div class="counter" data-target="12500">12 500+</div>
+        <div class="label">Jeunes filles sensibilisées</div>
+      </div>
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-wheelchair"></i></div>
+        <div class="counter" data-target="4500">4 500+</div>
+        <div class="label">Femmes handicapées autonomisées</div>
+      </div>
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-user-graduate"></i></div>
+        <div class="counter" data-target="350">350+</div>
+        <div class="label">Acteurs formés</div>
+      </div>
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-house-chimney-window"></i></div>
+        <div class="counter" data-target="75">75+</div>
+        <div class="label">Communautés bénéficiaires</div>
+      </div>
+      <div class="impact-stat">
+        <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <div class="counter" data-target="30">30+</div>
+        <div class="label">Projets réalisés</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE PROGRAMMES -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Programmes & Projets</span>
+      <h2 class="section-title">Quelques Réalisations sur le Terrain</h2>
+    </div>
+    <div class="grid-3">
+      <div class="prog-card">
+        <div class="prog-card-img">
+          <img src="img/deuxième sommet de la femme congolaise.jpg" alt="Sommet de la Femme Congolaise">
+          <span class="prog-tag">Leadership</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Sommet National de la Femme Congolaise</h3>
+          <p>Participation et plaidoyer pour la parité et l'égalité d'accès aux instances de décision en RDC.</p>
+          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="prog-card">
+        <div class="prog-card-img">
+          <img src="Stop aux violences sexuelles et celles basées sur le genre/2.jpg" alt="Atelier VBG">
+          <span class="prog-tag">VBG</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Ateliers de Sensibilisation & Référencement VBG</h3>
+          <p>Formation des relais communautaires pour l'identification et la prise en charge des victimes.</p>
+          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="prog-card">
+        <div class="prog-card-img">
+          <img src="img/aide.jpg" alt="Aide humanitaire">
+          <span class="prog-tag">Autonomisation</span>
+        </div>
+        <div class="prog-card-body">
+          <h3>Women Economic Empowerment Initiative</h3>
+          <p>Accès aux formations professionnelles et aux micro-crédits pour l'autonomisation des femmes.</p>
+          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:35px;">
+      <a href="programmes.html" class="btn btn-primary">Voir tous nos programmes <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PARTENAIRES TICKER -->
+<div class="partners-ticker">
+  <div style="text-align:center;color:var(--color-primary);font-size:0.85rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:25px;">Ils soutiennent nos actions</div>
+  <div class="partners-track">
+    <div class="partner-logo"><img src="partenaire/logo onu femmes rdc.png" alt="ONU Femmes RDC"></div>
+    <div class="partner-logo"><img src="partenaire/logo unfpa.png" alt="UNFPA"></div>
+    <div class="partner-logo"><img src="partenaire/pnud.png" alt="PNUD"></div>
+    <div class="partner-logo"><img src="partenaire/logo-unesco.png" alt="UNESCO"></div>
+    <div class="partner-logo"><img src="partenaire/AFD_logo.svg.png" alt="AFD"></div>
+    <div class="partner-logo"><img src="partenaire/IPAS_Logo.png" alt="IPAS"></div>
+    <div class="partner-logo"><img src="partenaire/logo ministère du genre et famille rdc.png" alt="Ministère Genre RDC"></div>
+    <div class="partner-logo"><img src="partenaire/logo-01-Min-Droits-Humains-RDC.png" alt="Min. Droits Humains RDC"></div>
+    <div class="partner-logo"><img src="partenaire/logo-fonarev.png" alt="FONAREV"></div>
+    <div class="partner-logo"><img src="partenaire/Logoafricell.png" alt="Africell"></div>
+    <div class="partner-logo"><img src="partenaire/Logo_Kinmarche.png" alt="Kinmarche"></div>
+    <div class="partner-logo"><img src="partenaire/logo zarina sharing is caring.png" alt="Zarina"></div>
+    <!-- Duplicate loop -->
+    <div class="partner-logo"><img src="partenaire/logo onu femmes rdc.png" alt="ONU Femmes RDC"></div>
+    <div class="partner-logo"><img src="partenaire/logo unfpa.png" alt="UNFPA"></div>
+    <div class="partner-logo"><img src="partenaire/pnud.png" alt="PNUD"></div>
+    <div class="partner-logo"><img src="partenaire/logo-unesco.png" alt="UNESCO"></div>
+    <div class="partner-logo"><img src="partenaire/AFD_logo.svg.png" alt="AFD"></div>
+    <div class="partner-logo"><img src="partenaire/IPAS_Logo.png" alt="IPAS"></div>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Vous voulez agir pour les droits des femmes ?</h2>
+    <p>Rejoignez le mouvement en tant que partenaire, bénévole ou donateur. Chaque engagement compte pour les femmes et les filles de RDC.</p>
+    <div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+      <a href="partenaire.html" class="btn btn-gold"><i class="fa-solid fa-handshake"></i> Devenir partenaire</a>
+      <a href="agir.html" class="btn btn-outline-light"><i class="fa-solid fa-heart"></i> Faire un don</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA" style="height:60px;margin-bottom:15px;">
+        <p style="font-size:0.88rem;color:#cbbba8;max-width:280px;">Pour une société équitable, inclusive et sans violence envers les femmes et les filles en République Démocratique du Congo.</p>
+        <div class="social-links" style="margin-top:15px;">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>À Propos</h4>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">Qui sommes-nous</a></li>
+          <li><a href="nos-domaines.html">Nos Domaines</a></li>
+          <li><a href="programmes.html">Programmes</a></li>
+          <li><a href="notre-impact.html">Notre Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nos Actions</h4>
+        <ul class="footer-links">
+          <li><a href="nos-domaines.html">Égalité de Genre</a></li>
+          <li><a href="nos-domaines.html#vbg">Lutte contre les VBG</a></li>
+          <li><a href="nos-domaines.html#dssr">Droits DSSR</a></li>
+          <li><a href="nos-domaines.html#handicap">Inclusion Handicap</a></li>
+          <li><a href="nos-domaines.html#autonomisation">Autonomisation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rejoignez-nous</h4>
+        <ul class="footer-links">
+          <li><a href="agir.html">Agir avec nous</a></li>
+          <li><a href="partenaire.html">Devenir Partenaire</a></li>
+          <li><a href="agir.html#don">Faire un don</a></li>
+          <li><a href="agir.html#benevole">Bénévolat</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html"><i class="fa-solid fa-location-dot" style="color:var(--color-secondary);"></i> Kinshasa, RDC</a></li>
+          <li><a href="mailto:contact@mwasiyamotuya.org"><i class="fa-solid fa-envelope" style="color:var(--color-secondary);"></i> contact@mwasiyamotuya.org</a></li>
+          <li><a href="tel:+243810000000"><i class="fa-solid fa-phone" style="color:var(--color-secondary);"></i> +243 81 000 0000</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <strong>ONG MWASI YA MOTUYA</strong>. Tous droits réservés.</span>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Politique de confidentialité</a>
+        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Conditions d'utilisation</a>
+        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Protection des données</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

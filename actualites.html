@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités — ONG MWASI YA MOTUYA</title>
+  <meta name="description" content="Suivez les dernières actualités, activités et événements de l'ONG MWASI YA MOTUYA pour la promotion des droits des femmes en RDC.">
+  <link rel="icon" type="image/x-icon" href="ico/logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<!-- STICKY NAVBAR -->
+<header class="site-header">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA">
+        <div>
+          <div class="brand-title">MWASI YA <span>MOTUYA</span></div>
+          <div style="font-size:0.65rem;color:var(--color-accent);text-transform:uppercase;letter-spacing:0.5px;">Égalité · Inclusion · Autonomisation</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+        
+        <!-- MENU DROPDOWN À PROPOS -->
+        <li class="nav-item has-dropdown">
+          <a href="a-propos.html" class="nav-link">
+            À Propos <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="a-propos.html" class="dropdown-link">Qui sommes-nous</a></li>
+            <li><a href="nos-domaines.html" class="dropdown-link">Nos Domaines</a></li>
+            <li><a href="programmes.html" class="dropdown-link">Programmes</a></li>
+            <li><a href="notre-impact.html" class="dropdown-link">Notre Impact</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="ressources.html" class="nav-link">Ressources</a></li>
+        <li class="nav-item"><a href="actualites.html" class="nav-link active">Actualités</a></li>
+
+        <!-- MENU DROPDOWN REJOIGNEZ-NOUS -->
+        <li class="nav-item has-dropdown">
+          <a href="agir.html" class="nav-link">
+            Rejoignez-nous <i class="fa-solid fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="agir.html" class="dropdown-link">Agir avec nous</a></li>
+            <li><a href="partenaire.html" class="dropdown-link">Devenir Partenaire</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="page-banner">
+  <div class="container">
+    <h1>Actualités & Événements</h1>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Actualités</div>
+  </div>
+</div>
+
+<section class="section-padding">
+  <div class="container">
+    <!-- FILTERS -->
+    <div class="filters-bar">
+      <button class="filter-btn active" data-filter="all">Toutes</button>
+      <button class="filter-btn" data-filter="vbg">VBG</button>
+      <button class="filter-btn" data-filter="genre">Genre</button>
+      <button class="filter-btn" data-filter="handicap">Handicap</button>
+      <button class="filter-btn" data-filter="sante">Santé</button>
+      <button class="filter-btn" data-filter="autonomisation">Autonomisation</button>
+      <button class="filter-btn" data-filter="evenement">Événements</button>
+    </div>
+
+    <div class="grid-3">
+      <div class="news-card" data-category="genre">
+        <img src="img/deuxième sommet de la femme congolaise.jpg" alt="Sommet Femme Congolaise">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 15 Juillet 2025 · <span class="tag-pill">Genre</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Participation au 2e Sommet de la Femme Congolaise</h3>
+          <p>Notre ONG a participé activement au Deuxième Sommet de la Femme Congolaise à Kinshasa, présentant nos avancées en matière de leadership féminin et de plaidoyer pour la parité.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="news-card" data-category="vbg">
+        <img src="Stop aux violences sexuelles et celles basées sur le genre/4.jpg" alt="Formation VBG">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 28 Juin 2025 · <span class="tag-pill">VBG</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Atelier de formation : Référencement VBG à Goma</h3>
+          <p>Un atelier de 3 jours a été organisé à Goma pour former 45 relais communautaires aux mécanismes d'identification et d'orientation des victimes de VBG.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="news-card" data-category="handicap">
+        <img src="img/3.jpg" alt="Autonomisation handicap">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 10 Mai 2025 · <span class="tag-pill">Handicap</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Remise de kits de production aux femmes handicapées</h3>
+          <p>Dans le cadre du programme Women & Disability Empowerment, 85 femmes vivant avec handicap ont reçu des kits de matériel et des formations en AGR à Kinshasa.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="news-card" data-category="sante">
+        <img src="img/6.jpg" alt="Sensibilisation DSSR">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 22 Avril 2025 · <span class="tag-pill">Santé</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Campagne de sensibilisation DSSR dans les écoles du Kongo Central</h3>
+          <p>Notre équipe a conduit une campagne d'éducation à la sexualité et aux droits reproductifs auprès de 2 800 jeunes filles dans 18 établissements scolaires.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="news-card" data-category="autonomisation">
+        <img src="img/aide.jpg" alt="Autonomisation économique">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 8 Mars 2025 · <span class="tag-pill">Autonomisation</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Journée Internationale de la Femme — Kinshasa 2025</h3>
+          <p>À l'occasion du 8 Mars, l'ONG MWASI YA MOTUYA a organisé une journée de célébration et de plaidoyer réunissant 500 femmes et filles bénéficiaires à Kinshasa.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="news-card" data-category="evenement">
+        <img src="Stop aux violences sexuelles et celles basées sur le genre/10.jpg" onerror="this.src='img/1.jpg'" alt="Événement terrain">
+        <div class="news-card-body">
+          <div class="news-date"><i class="fa-solid fa-calendar"></i> 14 Février 2025 · <span class="tag-pill">Événement</span></div>
+          <h3 style="font-size:1.1rem;margin-bottom:10px;">Campagne contre les VBG pour la Saint-Valentin</h3>
+          <p>Le 14 Février, l'ONG a lancé la campagne #AmourSansViolence pour sensibiliser la jeunesse de Kinshasa aux relations saines et au respect mutuel.</p>
+          <a href="#" class="read-more-link" style="margin-top:10px;">Lire l'article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Restez informé de nos activités</h2>
+    <p>Suivez l'ONG MWASI YA MOTUYA sur les réseaux sociaux pour ne manquer aucune actualité.</p>
+    <div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+      <a href="#" class="btn btn-gold"><i class="fa-brands fa-facebook-f"></i> Suivre sur Facebook</a>
+      <a href="#" class="btn btn-outline-light"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="logo/logo.png" alt="ONG MWASI YA MOTUYA" style="height:60px;margin-bottom:15px;">
+        <p style="font-size:0.88rem;color:#cbbba8;max-width:280px;">Pour une société équitable, inclusive et sans violence envers les femmes et les filles en République Démocratique du Congo.</p>
+        <div class="social-links" style="margin-top:15px;">
+          <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div><h4>À Propos</h4><ul class="footer-links"><li><a href="a-propos.html">Qui sommes-nous</a></li><li><a href="nos-domaines.html">Nos Domaines</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="notre-impact.html">Notre Impact</a></li></ul></div>
+      <div><h4>Nos Actions</h4><ul class="footer-links"><li><a href="nos-domaines.html#vbg">Lutte VBG</a></li><li><a href="nos-domaines.html#dssr">Droits DSSR</a></li><li><a href="nos-domaines.html#handicap">Inclusion Handicap</a></li><li><a href="programmes.html">Nos Programmes</a></li></ul></div>
+      <div><h4>Ressources</h4><ul class="footer-links"><li><a href="ressources.html">Publications</a></li><li><a href="ressources.html">Rapports</a></li><li><a href="actualites.html">Actualités</a></li></ul></div>
+      <div><h4>Contact</h4><ul class="footer-links"><li><a href="contact.html"><i class="fa-solid fa-location-dot" style="color:var(--color-secondary);"></i> Kinshasa, RDC</a></li><li><a href="mailto:contact@mwasiyamotuya.org"><i class="fa-solid fa-envelope" style="color:var(--color-secondary);"></i> contact@mwasiyamotuya.org</a></li><li><a href="agir.html">Agir avec nous</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <strong>ONG MWASI YA MOTUYA</strong>. Tous droits réservés.</span>
+      <div style="display:flex;gap:20px;"><a href="#" style="color:#cbbba8;font-size:0.82rem;">Politique de confidentialité</a><a href="#" style="color:#cbbba8;font-size:0.82rem;">Protection des données</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
