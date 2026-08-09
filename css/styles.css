@@ -652,6 +652,17 @@ img {
   color: #cbbba8;
   font-size: 0.88rem;
   transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.footer-links a i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
 }
 
 .footer-links a:hover {
