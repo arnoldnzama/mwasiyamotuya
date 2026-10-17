@@ -1,0 +1,49 @@
+/* ==========================================================================
+   HEADER — transparent en haut de page, couleur primaire au défilement
+   ========================================================================== */
+:root { --header-h: 95px; }
+@media (max-width: 868px) { :root { --header-h: 85px; } }
+
+html { scroll-padding-top: calc(var(--header-h) + 10px); }
+
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+  box-shadow: none;
+  transition: background-color .45s ease, border-color .45s ease, box-shadow .45s ease;
+}
+/* léger dégradé pour garder le menu lisible sur la photo */
+.site-header::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; bottom: -34px; z-index: -1;
+  background: linear-gradient(rgba(25,11,4,.62), rgba(25,11,4,0));
+  pointer-events: none; transition: opacity .45s ease;
+}
+.site-header.is-scrolled,
+.site-header.menu-open {
+  background-color: var(--color-primary);
+  border-bottom-color: var(--color-secondary);
+  box-shadow: 0 4px 20px rgba(0,0,0,.25);
+}
+.site-header.is-scrolled::before,
+.site-header.menu-open::before { opacity: 0; }
+
+@media (min-width: 869px) {
+  .navbar { transition: height .35s ease; }
+  .brand-logo img { transition: height .35s ease, transform .3s ease; }
+  .site-header.is-scrolled .navbar { height: 80px; }
+  .site-header.is-scrolled .brand-logo img { height: 60px; }
+}
+
+/* Le header flottant recouvre le haut des bannières : on compense */
+.hero-banner { padding-top: calc(var(--header-h) + 60px); min-height: 85vh; }
+.page-banner { padding-top: calc(var(--header-h) + 50px); }
+
+/* Focus visibles */
+.nav-link:focus-visible, .dropdown-link:focus-visible, .lang-btn:focus-visible, .mobile-toggle:focus-visible, .brand-logo:focus-visible {
+  outline: 3px solid var(--color-accent); outline-offset: 2px;
+}
+/* Sous-menus ouverts au clavier (desktop) */
+@media (min-width: 869px) {
+  .nav-item.has-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+}

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   MOTION DESIGN — langage d'animation commun à toutes les pages
+   Principe : tout est visible sans JS ; les états masqués n'existent que si
+   html.js-motion est présent, et un filet de sécurité les lève toujours.
+   ========================================================================== */
+:root { --ease-out: cubic-bezier(.22,.8,.3,1); }
+
+/* Barre de progression dorée */
+.scroll-progress {
+  position: absolute; left: 0; bottom: -3px; height: 3px; width: 100%;
+  background: linear-gradient(90deg, #D4A017, #F9D76B);
+  transform: scaleX(0); transform-origin: left; pointer-events: none;
+}
+
+/* Apparition au défilement */
+.js-motion .reveal {
+  opacity: 0; transform: translateY(26px);
+  transition: opacity .8s var(--ease-out) var(--d, 0s), transform .8s var(--ease-out) var(--d, 0s);
+}
+.js-motion .reveal.reveal-left  { transform: translateX(-34px); }
+.js-motion .reveal.reveal-right { transform: translateX(34px); }
+.js-motion .reveal.reveal-zoom  { transform: scale(.94); }
+.js-motion .reveal.is-visible { opacity: 1; transform: none; }
+
+/* Images : rideau doré léger */
+.js-motion .reveal-img { position: relative; overflow: hidden; }
+.js-motion .reveal-img::after {
+  content: ''; position: absolute; inset: 0; background: var(--color-primary);
+  transform: scaleY(1); transform-origin: bottom; transition: transform 1s var(--ease-out) var(--d, 0s); pointer-events: none; z-index: 2;
+}
+.js-motion .reveal-img.is-visible::after { transform: scaleY(0); }
+
+/* Hero : image qui respire + texte séquencé (démarre après le splash) */
+.hero-banner { background: var(--color-primary); overflow: hidden; isolation: isolate; }
+.hero-banner::before, .hero-banner::after { content: ''; position: absolute; inset: 0; z-index: -1; }
+.hero-banner::before { background: url('../img/7.jpg') center/cover no-repeat; transform-origin: 60% 40%; animation: heroDrift 24s ease-in-out infinite alternate; }
+.hero-banner::after { background: linear-gradient(135deg, rgba(39,19,7,.60) 0%, rgba(20,8,2,.60) 100%); }
+@keyframes heroDrift { from { transform: scale(1); } to { transform: scale(1.08) translate3d(-1%, -1%, 0); } }
+
+.js-motion .hero-content > * { opacity: 0; transform: translateY(24px); }
+.js-motion.page-ready .hero-content > * { animation: heroIn .9s var(--ease-out) forwards; }
+.js-motion.page-ready .hero-content > :nth-child(1) { animation-delay: .10s; }
+.js-motion.page-ready .hero-content > :nth-child(2) { animation-delay: .30s; }
+.js-motion.page-ready .hero-content > :nth-child(3) { animation-delay: .50s; }
+.js-motion.page-ready .hero-content > :nth-child(4) { animation-delay: .70s; }
+@keyframes heroIn { to { opacity: 1; transform: none; } }
+
+/* Bannières des pages internes */
+.js-motion .page-banner .container > * { opacity: 0; transform: translateY(16px); }
+.js-motion.page-ready .page-banner .container > * { animation: heroIn .8s var(--ease-out) forwards; }
+.js-motion.page-ready .page-banner .container > :nth-child(2) { animation-delay: .15s; }
+.page-banner { position: relative; overflow: hidden; }
+.page-banner::before {
+  content: ''; position: absolute; width: 60vmin; height: 60vmin; right: -10vmin; top: -20vmin; border-radius: 50%;
+  background: radial-gradient(circle, rgba(249,215,107,.22), rgba(212,160,23,0) 65%); animation: glowFloat 9s ease-in-out infinite alternate; pointer-events: none;
+}
+@keyframes glowFloat { to { transform: translate(-6vmin, 5vmin) scale(1.15); } }
+.page-banner .container { position: relative; z-index: 1; }
+
+/* Navigation : entrée douce */
+.js-motion .site-header .brand-logo, .js-motion .site-header .nav-item, .js-motion .site-header .lang-switcher { opacity: 0; transform: translateY(-10px); }
+.js-motion.page-ready .site-header .brand-logo, .js-motion.page-ready .site-header .nav-item, .js-motion.page-ready .site-header .lang-switcher {
+  animation: navIn .7s var(--ease-out) forwards; animation-delay: calc(var(--i, 0) * .06s);
+}
+@keyframes navIn { to { opacity: 1; transform: none; } }
+
+/* Entrée de page (pages internes : pas de splash) */
+.js-motion body { animation: pageFade .5s ease both; }
+@keyframes pageFade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Micro-interactions */
+.btn { transition: transform .3s var(--ease-out), box-shadow .3s ease, background-color .3s, color .3s, border-color .3s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(39,19,7,.22); }
+.btn:active { transform: translateY(0); }
+.btn:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 3px; }
+.card-icon, .icon-wrap { transition: transform .5s var(--ease-out); }
+.card-item:hover .card-icon, .feature-item:hover .icon-wrap { transform: translateY(-3px) rotate(-6deg) scale(1.06); }
+.impact-stat .icon { transition: transform .5s var(--ease-out); }
+.impact-stat:hover .icon { transform: scale(1.12); }
+
+/* Accessibilité : réduction des animations */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; transition-delay: 0s !important; }
+  .js-motion .reveal, .js-motion .hero-content > *, .js-motion .page-banner .container > *,
+  .js-motion .site-header .brand-logo, .js-motion .site-header .nav-item, .js-motion .site-header .lang-switcher { opacity: 1 !important; transform: none !important; }
+  .js-motion .reveal-img::after { display: none; }
+  .partners-track { animation: none !important; }
+}
+
+/* Mobile / tablette : pas de glissement latéral (évite tout débordement horizontal) */
+@media (max-width: 868px) {
+  .js-motion .reveal.reveal-left, .js-motion .reveal.reveal-right { transform: translateY(24px); }
+  .js-motion .reveal.is-visible { transform: none; }
+}

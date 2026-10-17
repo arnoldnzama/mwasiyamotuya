@@ -616,7 +616,7 @@ img {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr repeat(4, 1fr);
+  grid-template-columns: 2fr repeat(3, 1fr);
   gap: 40px;
   margin-bottom: 50px;
 }
@@ -692,6 +692,10 @@ img {
 }
 
 @media (max-width: 868px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-grid > * { min-width: 0; }
+  .footer-links a { overflow-wrap: anywhere; }
+
   .navbar {
     height: 85px; /* Larger navbar height for mobile/tablet */
   }

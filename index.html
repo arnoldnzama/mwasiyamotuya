@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-has-splash>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="js/boot.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/motion.css">
+  <link rel="stylesheet" href="css/splash.css">
+  <link rel="preload" as="image" href="img/7.jpg">
 </head>
 <body>
+
+<!-- SPLASH SCREEN (≈ 9 s, ignorable, une fois par session) -->
+<div id="splash" class="splash" role="dialog" aria-modal="true" aria-label="Introduction — ONG Mwasi ya Motuya">
+  <div class="splash-photo" aria-hidden="true"></div>
+  <div class="splash-glow" aria-hidden="true"></div>
+  <div class="splash-stage">
+    <div class="splash-emblem">
+      <svg class="splash-ring" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="splashGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F9D76B"/><stop offset=".5" stop-color="#D4A017"/><stop offset="1" stop-color="#F9D76B"/></linearGradient></defs>
+        <circle class="ring-main" cx="100" cy="100" r="94"/>
+        <circle class="ring-thin" cx="100" cy="100" r="99"/>
+      </svg>
+      <div class="splash-logo"><img src="logo/logo.png" alt="Logo ONG Mwasi ya Motuya"><span class="splash-shine" aria-hidden="true"></span></div>
+    </div>
+    <p class="splash-name">MWASI YA <span>MOTUYA</span></p>
+    <div class="splash-rule" aria-hidden="true"></div>
+    <p class="splash-tagline">Dignité · Égalité · Autonomisation</p>
+  </div>
+  <button type="button" class="splash-skip">Passer l'intro <i class="fa-solid fa-forward" aria-hidden="true"></i></button>
+</div>
 
 <!-- STICKY NAVBAR -->
 <header class="site-header">
@@ -167,38 +192,35 @@
         <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
         <h3>Égalité de Genre</h3>
         <p>Promotion de l'égalité hommes-femmes, déconstruction des stéréotypes et lutte contre les discriminations.</p>
-        <a href="nos-domaines.html" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="card-item">
         <div class="card-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
         <h3>Lutte contre les VBG</h3>
         <p>Prévention, protection, référencement, soutien psychosocial et accompagnement juridique des survivantes.</p>
-        <a href="nos-domaines.html#vbg" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="card-item">
         <div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div>
         <h3>Santé et Droits DSSR</h3>
         <p>Information, éducation complète, planification familiale et accès équitable à la santé reproductive.</p>
-        <a href="nos-domaines.html#dssr" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="card-item">
         <div class="card-icon"><i class="fa-solid fa-universal-access"></i></div>
         <h3>Handicap & Inclusion</h3>
         <p>Défense des droits et inclusion totale des femmes et filles vivant avec un handicap physique ou sensoriel.</p>
-        <a href="nos-domaines.html#handicap" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="card-item">
         <div class="card-icon"><i class="fa-solid fa-coins"></i></div>
         <h3>Autonomisation Économique</h3>
         <p>Formation professionnelle, entrepreneuriat, micro-crédits et éducation financière pour l'indépendance des femmes.</p>
-        <a href="nos-domaines.html#autonomisation" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
       <div class="card-item">
         <div class="card-icon"><i class="fa-solid fa-users-gear"></i></div>
         <h3>Leadership Féminin</h3>
         <p>Renforcement des capacités, participation citoyenne et implication des femmes dans la prise de décision.</p>
-        <a href="nos-domaines.html#leadership" class="read-more-link">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:35px;">
+      <a href="nos-domaines.html" class="btn btn-primary">Découvrir nos domaines <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
@@ -221,7 +243,6 @@
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="nos-domaines.html#vbg" class="btn btn-gold"><i class="fa-solid fa-file-shield"></i> Notre approche VBG</a>
-          <a href="contact.html" class="btn btn-outline-light">Nous contacter</a>
         </div>
       </div>
       <img src="Stop aux violences sexuelles et celles basées sur le genre/Stop aux violences sexuelles et celles basées sur le genre.jpg" alt="Stop aux VBG" class="vbg-img">
@@ -287,7 +308,6 @@
         <div class="prog-card-body">
           <h3>Sommet National de la Femme Congolaise</h3>
           <p>Participation et plaidoyer pour la parité et l'égalité d'accès aux instances de décision en RDC.</p>
-          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="prog-card">
@@ -298,7 +318,6 @@
         <div class="prog-card-body">
           <h3>Ateliers de Sensibilisation & Référencement VBG</h3>
           <p>Formation des relais communautaires pour l'identification et la prise en charge des victimes.</p>
-          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="prog-card">
@@ -309,7 +328,6 @@
         <div class="prog-card-body">
           <h3>Women Economic Empowerment Initiative</h3>
           <p>Accès aux formations professionnelles et aux micro-crédits pour l'autonomisation des femmes.</p>
-          <a href="programmes.html" class="read-more-link">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -371,34 +389,8 @@
           <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
-      <div>
-        <h4>À Propos</h4>
-        <ul class="footer-links">
-          <li><a href="a-propos.html">Qui sommes-nous</a></li>
-          <li><a href="nos-domaines.html">Nos Domaines</a></li>
-          <li><a href="programmes.html">Programmes</a></li>
-          <li><a href="notre-impact.html">Notre Impact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Nos Actions</h4>
-        <ul class="footer-links">
-          <li><a href="nos-domaines.html">Égalité de Genre</a></li>
-          <li><a href="nos-domaines.html#vbg">Lutte contre les VBG</a></li>
-          <li><a href="nos-domaines.html#dssr">Droits DSSR</a></li>
-          <li><a href="nos-domaines.html#handicap">Inclusion Handicap</a></li>
-          <li><a href="nos-domaines.html#autonomisation">Autonomisation</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Rejoignez-nous</h4>
-        <ul class="footer-links">
-          <li><a href="agir.html">Agir avec nous</a></li>
-          <li><a href="partenaire.html">Devenir Partenaire</a></li>
-          <li><a href="agir.html#don">Faire un don</a></li>
-          <li><a href="agir.html#benevole">Bénévolat</a></li>
-        </ul>
-      </div>
+      <div><h4>Le site</h4><ul class="footer-links"><li><a href="a-propos.html">Qui sommes-nous</a></li><li><a href="programmes.html">Programmes</a></li><li><a href="actualites.html">Actualités</a></li></ul></div>
+      <div><h4>S'engager</h4><ul class="footer-links"><li><a href="agir.html">Agir avec nous</a></li><li><a href="partenaire.html">Devenir partenaire</a></li></ul></div>
       <div>
         <h4>Contact</h4>
         <ul class="footer-links">
@@ -410,15 +402,14 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 <strong>ONG MWASI YA MOTUYA</strong>. Tous droits réservés.</span>
-      <div style="display:flex;gap:20px;flex-wrap:wrap;">
-        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Politique de confidentialité</a>
-        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Conditions d'utilisation</a>
-        <a href="#" style="color:#cbbba8;font-size:0.82rem;">Protection des données</a>
-      </div>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;"><a href="#" style="color:#cbbba8;font-size:0.82rem;">Politique de confidentialité</a><a href="#" style="color:#cbbba8;font-size:0.82rem;">Conditions d'utilisation</a></div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/header.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/splash.js"></script>
 </body>
 </html>
